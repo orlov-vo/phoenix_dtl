@@ -15,3 +15,7 @@
   config :phoenix, :template_engines,
     dtl: PhoenixDtl.Engine
 ```
+
+## Issues
+
+> Failed to extract name (https://github.com/erlydtl/erlydtl/issues/231)
