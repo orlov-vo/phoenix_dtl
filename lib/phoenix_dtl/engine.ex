@@ -4,10 +4,10 @@ defmodule PhoenixDtl.Engine do
   @doc """
   Precompiles the String file_path into a function defintion, using erlydtl engine
   """
-  def compile(path, name) do
+  def compile(path, _name) do
     path
     |> read
-    |> EEx.compile_string(engine: engine_for(name), file: path, line: 1)
+    |> EEx.compile_string(engine: Phoenix.HTML.Engine, file: path, line: 1)
   end
 
   def read(file_path) do
