@@ -26,7 +26,7 @@ defmodule PhoenixDtl.Mixfile do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
       {:cowboy, "~> 1.0.0", only: [:dev, :test]},
-      {:erlydtl, github: "erlydtl/erlydtl", branch: "stable"}
+      {:erlydtl, github: "erlydtl/erlydtl", branch: "master"}
     ]
   end
 end
