@@ -5,8 +5,8 @@ defmodule PhoenixDtl.Mixfile do
     [
       app: :phoenix_dtl,
       version: "0.0.1",
-      elixir: "~> 1.0.0",
-      deps: deps,
+      elixir: "~> 1.2",
+      deps: deps(),
       package: [
         contributors: ["Andreas Gerstmayr"],
         licenses: ["MIT"],
@@ -24,8 +24,8 @@ defmodule PhoenixDtl.Mixfile do
 
   defp deps do
     [
-      {:phoenix, github: "phoenixframework/phoenix"},
-      {:cowboy, "~> 1.0.0", only: [:dev, :test]},
+      {:phoenix, "~> 1.2.1"},
+      {:cowboy, "~> 1.0", only: [:dev, :test]},
       {:erlydtl, github: "erlydtl/erlydtl", branch: "stable"}
     ]
   end
